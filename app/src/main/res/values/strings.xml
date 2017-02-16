@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConversorApp</string>
+    <string name="tittle">CONVERSOR</string>
+    <string name="button">CALCULAR</string>
+</resources>
