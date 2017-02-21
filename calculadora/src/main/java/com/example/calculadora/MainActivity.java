@@ -130,13 +130,11 @@ public class MainActivity extends AppCompatActivity {
 
                 add=Double.parseDouble(sNumero);
 
-                sPantalla= sNumero + "+";
-                ePantalla.setText(sPantalla.toString());
+                sPantalla = sPantalla + sNumero + "+";
 
                 sDigito="";
                 sNumero="";
 
-                eResultado.setText(sDigito);
 
                 break;
 
@@ -144,13 +142,10 @@ public class MainActivity extends AppCompatActivity {
 
                 add=Double.parseDouble(sNumero);
 
-                sPantalla= sNumero + "-";
-                ePantalla.setText(sPantalla.toString());
+                sPantalla = sPantalla + sNumero + "-";
 
                 sDigito="";
                 sNumero="";
-
-                eResultado.setText(sDigito);
 
                 break;
 
@@ -158,13 +153,10 @@ public class MainActivity extends AppCompatActivity {
 
                 add=Double.parseDouble(sNumero);
 
-                sPantalla= sNumero + "×";
-                ePantalla.setText(sPantalla.toString());
+                sPantalla = sPantalla + sNumero + "×";
 
                 sDigito="";
                 sNumero="";
-
-                eResultado.setText(sDigito);
 
                 break;
 
@@ -172,13 +164,10 @@ public class MainActivity extends AppCompatActivity {
 
                 add=Double.parseDouble(sNumero);
 
-                sPantalla= sNumero + "÷";
-                ePantalla.setText(sPantalla.toString());
+                sPantalla = sPantalla + sNumero + "÷";
 
                 sDigito="";
                 sNumero="";
-
-                eResultado.setText(sDigito);
 
                 break;
 
@@ -198,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
         sNumero= sNumero + sDigito;
         ePantalla.setText(sPantalla.toString());
+        eResultado.setText(sNumero.toString());
 
 
 
