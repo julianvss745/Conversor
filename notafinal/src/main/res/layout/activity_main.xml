@@ -58,7 +58,8 @@
             android:id="@+id/ePracticas"
             android:inputType= "numberDecimal"
             android:lineSpacingExtra="10sp"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,7 +81,8 @@
             android:id="@+id/eAvanceI"
             android:inputType= "numberDecimal"
             android:selectAllOnFocus="true"
-            android:lineSpacingExtra="10sp" />
+            android:lineSpacingExtra="10sp"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -102,7 +104,8 @@
             android:inputType= "numberDecimal"
             android:id="@+id/eAvanceII"
             android:lineSpacingExtra="10sp"
-            android:selectAllOnFocus="true" />
+            android:selectAllOnFocus="true"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,7 +127,8 @@
             android:inputType= "numberDecimal"
             android:id="@+id/eAvanceIII"
             android:lineSpacingExtra="10sp"
-            android:selectAllOnFocus="true" />
+            android:selectAllOnFocus="true"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -146,7 +150,8 @@
             android:inputType= "numberDecimal"
             android:id="@+id/eAplicacion"
             android:lineSpacingExtra="10sp"
-            android:selectAllOnFocus="true" />
+            android:selectAllOnFocus="true"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -158,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calcular"
-            />
+            android:id="@+id/bCalcular" />
     </LinearLayout>
 
     <LinearLayout
@@ -178,7 +183,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/eNota"
             android:lineSpacingExtra="10sp"
-            android:selectAllOnFocus="true" />
+            android:hint="definitiva" />
     </LinearLayout>
 
 </LinearLayout>
