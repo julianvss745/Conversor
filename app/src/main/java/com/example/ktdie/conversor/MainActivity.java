@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Asociación
         ePesos=(EditText) findViewById(R.id.ePesos);
         eDolares=(EditText) findViewById(R.id.eDolares);
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                //Avisos tipo Toast dependiendo del valor de los EditText
                 if(eDolares.getText().toString().equals("")&&ePesos.getText().toString().equals("")){
 
                     Toast.makeText(getApplicationContext(),"Ingrese la cantidad en pesos o en dólares que desea convertir",Toast.LENGTH_SHORT).show();
@@ -42,20 +44,25 @@ public class MainActivity extends AppCompatActivity {
 
                 if(!(eDolares.getText().toString().equals(""))&& ePesos.getText().toString().equals("")){
 
+                    //Covertir texto a string y luego a double
                     dolares=Double.parseDouble(eDolares.getText().toString());
 
+                    // Realizar la operacion e imprimir en el EditText
                     pesos= dolares*2850;
-                    ePesos.setText(String.valueOf(pesos));
+                    ePesos.setText(String.format("%.4f",pesos));
                 }
 
 
                 if((eDolares.getText().toString().equals(""))&& !ePesos.getText().toString().equals("")){
 
+                    //Covertir texto a string y luego a double
                     pesos=Double.parseDouble(ePesos.getText().toString());
 
+                    // Realizar la operacion e imprimir en el EditText
                     dolares= pesos/2850;
-                    eDolares.setText(String.valueOf(dolares));
+                    eDolares.setText(String.format("%.4f",dolares));
                 }
+
             }
         });
 
