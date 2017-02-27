@@ -55,7 +55,7 @@
             android:layout_weight="1"
             android:hint="PESOS"
             android:id="@+id/ePesos"
-            android:inputType="numberDecimal"
+            android:inputType= "numberDecimal"
             android:textAlignment="center"
             android:layout_margin="5dp"/>
 

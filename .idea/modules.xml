@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Conversor.iml" filepath="$PROJECT_DIR$/Conversor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/calculadora/calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/figuras/figuras.iml" filepath="$PROJECT_DIR$/figuras/figuras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notafinal/notafinal.iml" filepath="$PROJECT_DIR$/notafinal/notafinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resistencias/resistencias.iml" filepath="$PROJECT_DIR$/resistencias/resistencias.iml" />
     </modules>
   </component>
 </project>

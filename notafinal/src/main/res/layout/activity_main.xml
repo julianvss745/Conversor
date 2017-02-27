@@ -40,7 +40,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -52,7 +52,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/practicas"
             android:id="@+id/ePracticas"
@@ -63,7 +63,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -75,7 +75,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/avanceI"
             android:id="@+id/eAvanceI"
@@ -86,7 +86,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -98,7 +98,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/avanceII"
             android:inputType= "numberDecimal"
@@ -109,7 +109,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -121,7 +121,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/avanceIII"
             android:inputType= "numberDecimal"
@@ -132,7 +132,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -144,7 +144,7 @@
             android:textSize="22sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/aplicacion"
             android:inputType= "numberDecimal"
@@ -163,11 +163,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calcular"
-            android:id="@+id/bCalcular" />
+            android:id="@+id/bCalcular"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -179,11 +180,12 @@
             android:textSize="24sp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/eNota"
             android:lineSpacingExtra="10sp"
-            android:hint="definitiva" />
+            android:hint="Definitiva"
+            android:gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>

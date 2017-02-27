@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nota final</string>
+    <string name="avanceI">Porcentaje 5%</string>
+    <string name="practicas">Porcentaje 60%</string>
+    <string name="avanceII">Porcentaje 7%</string>
+    <string name="avanceIII">Porcentaje 8%</string>
+    <string name="aplicacion">Porcentaje 20%</string>
+</resources>

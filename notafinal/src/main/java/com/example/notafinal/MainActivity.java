@@ -45,18 +45,29 @@ public class MainActivity extends AppCompatActivity {
                     // avisos tipo Toast si se presenta algun error
                     if (prac>5 || prac<0){
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
+                        nf= 0*prac;
+                        eNota.setText(String.format("%.2f",nf));
+
                     }
                     if (avI>5 || avI<0){
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
+                        nf= 0*avI;
+                        eNota.setText(String.format("%.2f",nf));
                     }
                     if (avII>5 || avII<0){
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
+                        nf= 0*avII;
+                        eNota.setText(String.format("%.2f",nf));
                     }
                     if (avIII>5 || avIII<0){
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
+                        nf= 0*avIII;
+                        eNota.setText(String.format("%.2f",nf));
                     }
                     if (app>5 || app<0){
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
+                        nf= 0*app;
+                        eNota.setText(String.format("%.2f",nf));
                     }
 
                     //Calculo de la nota
@@ -67,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Error!! Rango de la nota de 0 a 5, revisar las notas",Toast.LENGTH_SHORT).show();
                     }
 
-                    eNota.setText(String.valueOf(nf));
                 }
 
 
@@ -76,30 +86,36 @@ public class MainActivity extends AppCompatActivity {
                 if (nf <= 1) {
 
                     Toast.makeText(getApplicationContext(), "Estás en el lugar equivoado", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
                 if (nf > 1 && nf <= 2) {
 
                     Toast.makeText(getApplicationContext(), "Remal", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
 
                 if (nf > 2 && nf <= 3) {
 
                     Toast.makeText(getApplicationContext(), "Es posible recuperarse", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
 
                 if (nf > 3 && nf <= 4) {
 
                     Toast.makeText(getApplicationContext(), "Normalito", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
 
                 if (nf > 4 && nf <= 4.5) {
 
                     Toast.makeText(getApplicationContext(), "Muy bien", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
 
                 if (nf > 4.5 && nf <= 5) {
 
                     Toast.makeText(getApplicationContext(), "Excelente estudiante", Toast.LENGTH_SHORT).show();
+                    eNota.setText(String.format("%.2f",nf));
                 }
 
             }

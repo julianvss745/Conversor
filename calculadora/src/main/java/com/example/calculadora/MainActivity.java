@@ -5,17 +5,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
     EditText ePantalla, eResultado;
+    TextView tResultado;
 
     Button b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,bDiv,bMul,bRes,bSum,bC,bComa,bIgual;
 
-    String  sDigito, sNumero, sPantalla, sResultado;
+    String  sDigito,sNumero,sPantalla,sResultado;
 
-    Double add, ans;
+    Double num1= Double.valueOf(0);
+    Double num2= Double.valueOf(0);
+
+    int x;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         ePantalla=(EditText)findViewById(R.id.ePantalla);
         eResultado=(EditText) findViewById(R.id.eResultado);
+
+        tResultado=(TextView) findViewById(R.id.tResultado);
 
         sDigito="";
         sNumero="";
@@ -128,69 +135,173 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.bSum:
 
-                add=Double.parseDouble(sNumero);
+                num2=Double.parseDouble(sNumero.toString());
+
+                switch (x)
+                {
+                    case 1:
+                        num1= num1 + num2;
+                        break;
+                    case 2:
+                        num1= num1 - num2;
+                        break;
+                    case 3:
+                        num1= num1 * num2;
+                        break;
+                    case 4:
+                        num1= num1 / num2;
+                        break;
+                }
 
                 sPantalla = sPantalla + sNumero + "+";
 
                 sDigito="";
                 sNumero="";
 
+                x=1;
 
                 break;
 
             case R.id.bRes:
 
-                add=Double.parseDouble(sNumero);
+                num2=Double.parseDouble(sNumero.toString());
+
+                switch (x)
+                {
+                    case 1:
+                        num1= num1 + num2;
+                        break;
+                    case 2:
+                        num1= num1 - num2;
+                        break;
+                    case 3:
+                        num1= num1 * num2;
+                        break;
+                    case 4:
+                        num1= num1 / num2;
+                        break;
+                }
+
 
                 sPantalla = sPantalla + sNumero + "-";
 
                 sDigito="";
                 sNumero="";
 
+                x=2;
+
                 break;
 
             case R.id.bMul:
 
-                add=Double.parseDouble(sNumero);
+                num2=Double.parseDouble(sNumero.toString());
+
+                switch (x)
+                {
+                    case 1:
+                        num1= num1 + num2;
+                        break;
+                    case 2:
+                        num1= num1 - num2;
+                        break;
+                    case 3:
+                        num1= num1 * num2;
+                        break;
+                    case 4:
+                        num1= num1 / num2;
+                        break;
+                }
+
 
                 sPantalla = sPantalla + sNumero + "×";
 
                 sDigito="";
                 sNumero="";
 
+                x=3;
+
                 break;
 
             case R.id.bDiv:
 
-                add=Double.parseDouble(sNumero);
+                num2=Double.parseDouble(sNumero.toString());
+
+                switch (x)
+                {
+                    case 1:
+                        num1= num1 + num2;
+                        break;
+                    case 2:
+                        num1= num1 - num2;
+                        break;
+                    case 3:
+                        num1= num1 * num2;
+                        break;
+                    case 4:
+                        num1= num1 / num2;
+                        break;
+                }
 
                 sPantalla = sPantalla + sNumero + "÷";
 
                 sDigito="";
                 sNumero="";
 
+                x=4;
+
                 break;
 
             case R.id.bC:
+
                 sDigito=" ";
                 sPantalla="";
                 sResultado="";
                 sNumero="";
                 ePantalla.setText(sDigito.toString());
                 eResultado.setText(sDigito.toString());
+                num1=Double.valueOf(0);
+                num2=Double.valueOf(0);
+                tResultado.setText(String.format("%.2f",num1));
 
                 break;
 
+            case R.id.bIgual:
 
+                num2=Double.parseDouble(sNumero.toString());
 
+                switch (x)
+                {
+                    case 1:
+                        num1= num1 + num2;
+                        break;
+                    case 2:
+                        num1= num1 - num2;
+                        break;
+                    case 3:
+                        num1= num1 * num2;
+                        break;
+                    case 4:
+                        num1= num1 / num2;
+                        break;
+                }
+
+                tResultado.setText(String.format("%.2f",num1));
+
+                sDigito=" ";
+                sPantalla="";
+                sResultado="";
+                sNumero="";
+                ePantalla.setText(sDigito.toString());
+                eResultado.setText(sDigito.toString());
+                num1=Double.valueOf(0);
+                num2=Double.valueOf(0);
+
+                break;
         }
 
         sNumero= sNumero + sDigito;
         ePantalla.setText(sPantalla.toString());
         eResultado.setText(sNumero.toString());
-
-
-
 
     }
 }
